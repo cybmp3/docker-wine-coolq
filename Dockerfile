@@ -31,6 +31,7 @@ RUN sudo -Hu user WINEARCH=win32 /usr/bin/wine wineboot && \
     sudo -Hu user /usr/local/bin/winetricks -q /tmp/winhttp_2ksp4.verb && \
     sudo -Hu user /usr/local/bin/winetricks -q msscript && \
     sudo -Hu user /usr/local/bin/winetricks -q fontsmooth=rgb && \
+    sudo -Hu user /usr/local/bin/winetricks -q dotnet452 && \
     wget https://dlsec.cqp.me/docker-simsun -O /tmp/simsun.zip && \
     rm /etc/wgetrc && \
     mkdir -p /home/user/.wine/drive_c/windows/Fonts && \
