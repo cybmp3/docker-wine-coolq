@@ -3,7 +3,7 @@ FROM oott123/novnc:v0.1.1
 RUN apt-get update && \
     apt-get install -y --allow-unauthenticated \
         software-properties-common apt-transport-https \
-        cabextract unzip python-numpy \
+        cabextract unzip python-numpy openjdk-8-jre \
         language-pack-zh-hans tzdata ttf-wqy-microhei && \
     # 安装 wine
     wget -nc https://dl.winehq.org/wine-builds/Release.key -O /tmp/wine.key && \
